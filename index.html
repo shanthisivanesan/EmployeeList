@@ -7,7 +7,8 @@
 <body ng-controller="AppCtrl">
   <h1>XYZ Employee List</h1>
   <!-- App template goes here -->
-  [<a href="#/">index</a>]
+   <input type="text" ng-model="search" class="search-query" placeholder="Search">
+  <br>[<a href="#/">List</a>]
   <div ng-view></div>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.1/angular.min.js"></script>
   <script src="app.js">

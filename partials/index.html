@@ -1,6 +1,6 @@
 <p ng-show="employee.length == 0">There are no Employees here!</p>
 <ul>
-  <li ng-repeat="(id, employee) in employees">
+  <li ng-repeat="(id, employee) in employees | filter:search">
     <a href="#/info/{{id}}">{{employee.name}}</a>
     [<a href="#/edit/{{id}}">Edit</a>]
     [<a href="#/remove/{{id}}">Remove</a>]
